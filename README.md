@@ -1,7 +1,10 @@
 # Startup Project
 
-on a classé le projetc par dossier donc à chaque fois que vous passer d'un dossier à l'autre il faut faire.
+on a classé le projet par dossier donc à chaque fois que vous passer d'un dossier à l'autre il faut faire.
+* cd dossier
 * bundle install
+* rails console
+* vos verification
 
 Dossier:
 

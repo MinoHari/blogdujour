@@ -12,4 +12,3 @@ require 'faker'
   user = User.create(name: Faker::Name.unique.name, article: Faker::Lorem.sentence)
   first_article = Article.create(nom: Faker::Name.unique.name, body: Faker::Lorem.sentence(3), description: Faker::Lorem.sentence(4))
 end
-
