@@ -1,8 +1,10 @@
 # Startup Project
 
-on a classé le projet par dossier donc à chaque fois que vous passer d'un dossier à l'autre il faut faire.
+on a classé le projet par dossier donc à chaque fois que vous passer d'un dossier à l'autre il faut faire :
 * cd dossier
 * bundle install
+* rails db:migrate
+* rails db:seed
 * rails console
 * vos verification
 
@@ -11,6 +13,10 @@ Dossier:
 * Startup
 
 * MooCademy
+
+* HackingClass
+
+* HackingPinterest
 
 
 # Outils
