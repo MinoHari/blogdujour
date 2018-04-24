@@ -1,24 +1,22 @@
-# README
+# Startup Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+on a classé le projetc par dossier donc à chaque fois que vous passer d'un dossier à l'autre il faut faire.
+* bundle install
 
-Things you may want to cover:
+Dossier:
 
-* Ruby version
+* Startup
 
-* System dependencies
+* MooCademy
 
-* Configuration
 
-* Database creation
+# Outils
 
-* Database initialization
+* ruby 2.5 
 
-* How to run the test suite
+* rails 5.1.6
 
-* Services (job queues, cache servers, search engines, etc.)
+* DB Browser for Sqlite3
 
-* Deployment instructions
-
-* ...
+# Peer
+@Hari et @tinosam
