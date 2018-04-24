@@ -248,3 +248,168 @@ Migrating to AddColumnArticleToUser (20180424103047)
   [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Dr. Vickie Volkman"], ["created_at", "2018-04-24 13:56:36.051709"], ["updated_at", "2018-04-24 13:56:36.051709"], ["article", "Commodi et quisquam sint."]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Edmond Nader Jr."], ["body", "Placeat quibusdam quia sequi mollitia."], ["description", "Nemo omnis fuga at quia illum laborum facilis commodi."], ["created_at", "2018-04-24 13:56:36.110516"], ["updated_at", "2018-04-24 13:56:36.110516"]]
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Diana Zieme Jr."], ["created_at", "2018-04-24 13:56:36.144089"], ["updated_at", "2018-04-24 13:56:36.144089"], ["article", "Quia consequatur quia aut perferendis laborum."]]
+  [1m[35m (19.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Manley Batz"], ["body", "Debitis et soluta cum labore."], ["description", "Ipsa voluptatem deleniti quam eos."], ["created_at", "2018-04-24 13:56:36.176044"], ["updated_at", "2018-04-24 13:56:36.176044"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Marlen Hoppe"], ["created_at", "2018-04-24 13:56:36.191506"], ["updated_at", "2018-04-24 13:56:36.191506"], ["article", "Consectetur et doloremque laborum fugiat quae numquam doloribus sit."]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Jude Nolan"], ["body", "Nostrum ipsam natus ut placeat assumenda qui."], ["description", "Minus corrupti dicta labore eos vitae ullam."], ["created_at", "2018-04-24 13:56:36.216267"], ["updated_at", "2018-04-24 13:56:36.216267"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Estell Stark IV"], ["created_at", "2018-04-24 13:56:36.237908"], ["updated_at", "2018-04-24 13:56:36.237908"], ["article", "Nesciunt fuga ducimus eum vitae sed quod iste."]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Mrs. Lucinda Cummerata"], ["body", "Sed in sit rerum aspernatur recusandae omnis."], ["description", "Maiores ut nulla dolorem aut blanditiis."], ["created_at", "2018-04-24 13:56:36.260329"], ["updated_at", "2018-04-24 13:56:36.260329"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Ayden Cole"], ["created_at", "2018-04-24 13:56:36.282607"], ["updated_at", "2018-04-24 13:56:36.282607"], ["article", "Expedita labore deserunt cupiditate nobis voluptatum aspernatur quasi."]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Pamela Beer Jr."], ["body", "Illo pariatur mollitia."], ["description", "Molestiae delectus repudiandae odio tenetur quo."], ["created_at", "2018-04-24 13:56:36.302665"], ["updated_at", "2018-04-24 13:56:36.302665"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Oswaldo McDermott"], ["created_at", "2018-04-24 13:56:36.322479"], ["updated_at", "2018-04-24 13:56:36.322479"], ["article", "Ea et quia et ut dolor."]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Jovany Fay Sr."], ["body", "Nihil corporis in sint."], ["description", "Excepturi ut quia quis eos perferendis eum illo maxime."], ["created_at", "2018-04-24 13:56:36.344387"], ["updated_at", "2018-04-24 13:56:36.344387"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Leonel Moen"], ["created_at", "2018-04-24 13:56:36.360330"], ["updated_at", "2018-04-24 13:56:36.360330"], ["article", "Officiis numquam et quidem tempore tempora maxime a qui."]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Olga Langworth"], ["body", "Qui quia est earum qui sit."], ["description", "Culpa autem quibusdam odio accusamus."], ["created_at", "2018-04-24 13:56:36.375201"], ["updated_at", "2018-04-24 13:56:36.375201"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Pink Schumm"], ["created_at", "2018-04-24 13:56:36.389921"], ["updated_at", "2018-04-24 13:56:36.389921"], ["article", "Enim nihil ut dignissimos totam et dicta corrupti."]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Claud Swift"], ["body", "Omnis nihil recusandae vel pariatur."], ["description", "Occaecati rerum fugiat ut impedit modi tempore."], ["created_at", "2018-04-24 13:56:36.415658"], ["updated_at", "2018-04-24 13:56:36.415658"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Casimer Will"], ["created_at", "2018-04-24 13:56:36.430395"], ["updated_at", "2018-04-24 13:56:36.430395"], ["article", "Qui perspiciatis libero illo eligendi."]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Aurore Brown"], ["body", "Et et est omnis rem neque."], ["description", "Ea est officia sequi."], ["created_at", "2018-04-24 13:56:36.456201"], ["updated_at", "2018-04-24 13:56:36.456201"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Mary Douglas Sr."], ["created_at", "2018-04-24 13:56:36.476312"], ["updated_at", "2018-04-24 13:56:36.476312"], ["article", "In sunt vitae accusantium itaque dolore."]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Dr. Carroll Conn"], ["body", "Magni debitis quia."], ["description", "Ut et inventore ipsum quia quae et qui praesentium."], ["created_at", "2018-04-24 13:56:36.509037"], ["updated_at", "2018-04-24 13:56:36.509037"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Mrs. Erica Cole"], ["created_at", "2018-04-24 14:03:04.608919"], ["updated_at", "2018-04-24 14:03:04.608919"], ["article", "Pariatur sit laboriosam eos."]]
+  [1m[35m (40.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Daphney Koelpin Sr."], ["created_at", "2018-04-24 14:04:16.637270"], ["updated_at", "2018-04-24 14:04:16.637270"], ["article", "Doloribus quaerat atque eveniet quos."]]
+  [1m[35m (46.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Ms. Victor Schinner"], ["created_at", "2018-04-24 14:04:57.778576"], ["updated_at", "2018-04-24 14:04:57.778576"], ["article", "Et libero architecto nobis."]]
+  [1m[35m (42.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Pearlie Bashirian"], ["created_at", "2018-04-24 14:18:38.094529"], ["updated_at", "2018-04-24 14:18:38.094529"], ["article", "Ut illum et numquam et accusantium a ullam."]]
+  [1m[35m (31.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Freeda Medhurst"], ["body", "Sed eligendi neque assumenda sit."], ["description", "Consectetur sunt provident qui labore temporibus est."], ["created_at", "2018-04-24 14:18:38.162428"], ["updated_at", "2018-04-24 14:18:38.162428"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Dr. Chyna Rath"], ["created_at", "2018-04-24 14:18:38.179279"], ["updated_at", "2018-04-24 14:18:38.179279"], ["article", "Molestias iste et reprehenderit."]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Lily O'Reilly"], ["body", "Expedita et neque sed pariatur adipisci vel."], ["description", "Ipsa quis et quisquam tempore dignissimos error."], ["created_at", "2018-04-24 14:18:38.202109"], ["updated_at", "2018-04-24 14:18:38.202109"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Ms. Karine Lakin"], ["created_at", "2018-04-24 14:18:38.219088"], ["updated_at", "2018-04-24 14:18:38.219088"], ["article", "Perspiciatis ut aut dolores."]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Augusta Lemke"], ["body", "Qui delectus rerum pariatur iusto."], ["description", "Officiis ratione quam cupiditate quo."], ["created_at", "2018-04-24 14:18:38.231965"], ["updated_at", "2018-04-24 14:18:38.231965"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Kristian DuBuque"], ["created_at", "2018-04-24 14:18:38.259610"], ["updated_at", "2018-04-24 14:18:38.259610"], ["article", "Enim enim perferendis magnam eaque maxime sint et fuga."]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Hailey Gibson"], ["body", "Et incidunt aut error eum."], ["description", "Quod cupiditate assumenda ipsam aut."], ["created_at", "2018-04-24 14:18:38.280440"], ["updated_at", "2018-04-24 14:18:38.280440"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Salvatore Padberg"], ["created_at", "2018-04-24 14:18:38.296023"], ["updated_at", "2018-04-24 14:18:38.296023"], ["article", "Delectus velit quia enim."]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Madisen Mraz MD"], ["body", "Omnis necessitatibus quis ut accusamus et nihil est."], ["description", "Voluptates sed blanditiis dolorem et."], ["created_at", "2018-04-24 14:18:38.310712"], ["updated_at", "2018-04-24 14:18:38.310712"]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Ora Kilback"], ["created_at", "2018-04-24 14:18:38.326464"], ["updated_at", "2018-04-24 14:18:38.326464"], ["article", "Quos maiores quia itaque distinctio exercitationem porro saepe sed."]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Ephraim Armstrong PhD"], ["body", "Dolor in quo."], ["description", "Cupiditate eius voluptas nostrum est repellendus."], ["created_at", "2018-04-24 14:18:38.342281"], ["updated_at", "2018-04-24 14:18:38.342281"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Miss Frances Langworth"], ["created_at", "2018-04-24 14:18:38.357534"], ["updated_at", "2018-04-24 14:18:38.357534"], ["article", "Aspernatur veniam animi autem quaerat velit numquam exercitationem."]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Miss Guy Deckow"], ["body", "Ipsa eaque eos iste dolore."], ["description", "Itaque vitae quia accusantium nostrum dolores."], ["created_at", "2018-04-24 14:18:38.373715"], ["updated_at", "2018-04-24 14:18:38.373715"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Madisyn Stehr DVM"], ["created_at", "2018-04-24 14:18:38.388437"], ["updated_at", "2018-04-24 14:18:38.388437"], ["article", "Voluptatum tenetur suscipit consequuntur perspiciatis iste."]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Sandrine Hand DVM"], ["body", "Excepturi molestiae et laboriosam sit sed dolor ab."], ["description", "Porro fuga voluptatem in eos dignissimos aut sed voluptas."], ["created_at", "2018-04-24 14:18:38.404567"], ["updated_at", "2018-04-24 14:18:38.404567"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Sammie Okuneva"], ["created_at", "2018-04-24 14:18:38.420165"], ["updated_at", "2018-04-24 14:18:38.420165"], ["article", "Pariatur magnam qui earum ducimus."]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Ms. Rupert Paucek"], ["body", "Commodi fugit quod eos repudiandae deleniti minima voluptas."], ["description", "Aut deserunt quia ut quo."], ["created_at", "2018-04-24 14:18:38.440701"], ["updated_at", "2018-04-24 14:18:38.440701"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "article") VALUES (?, ?, ?, ?)[0m  [["name", "Alek Schiller MD"], ["created_at", "2018-04-24 14:18:38.457365"], ["updated_at", "2018-04-24 14:18:38.457365"], ["article", "Quia nemo harum impedit laudantium eveniet aut dignissimos."]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("nom", "body", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nom", "Wayne Homenick"], ["body", "Autem doloremque sed sapiente voluptate vitae."], ["description", "Aut omnis quis ad."], ["created_at", "2018-04-24 14:18:38.473031"], ["updated_at", "2018-04-24 14:18:38.473031"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
