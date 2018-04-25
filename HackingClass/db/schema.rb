@@ -10,15 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180424134405) do
+ActiveRecord::Schema.define(version: 20180424143545) do
 
-# Could not dump table "cours" because of following StandardError
-#   Unknown type 'object' for column 'lecon'
+  create_table "news", force: :cascade do |t|
+    t.text "lien"
+    t.text "commentaire"
+    t.text "lien_commentaire"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "users_id"
+  end
 
-  create_table "lecons", force: :cascade do |t|
-    t.text "titre_lecon"
-    t.text "body"
-    t.integer "cours_id"
+  create_table "users", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

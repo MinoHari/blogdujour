@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+10.times do
+    user = User.create(name: Faker::Name.unique.name)
+    pin = Pin.create(url_image: Faker::Internet.url+".img", commentaire: Faker::Lorem.paragraph, user_id: user.id)
+  end

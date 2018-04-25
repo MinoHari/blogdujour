@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-#Creating Cours
-5.times do
-cour = Cour.create(titre: Faker::OnePiece.sea, description: Faker::OnePiece.quote )
-lecon = Lecon.create(titre:Faker::OnePiece.character ,body: Faker::Lorem.sentence(3) )
-end
+10.times do
+    cour = Cour.create(titre: Faker::ProgrammingLanguage.name, description: Faker::Lorem.sentence)
+    lecon = Lecon.create(titre_lecon: Faker::Lorem.sentence, body: Faker::Lorem.paragraph, cours_id: cour.id)
+    cour.lecon = lecon
+  end
